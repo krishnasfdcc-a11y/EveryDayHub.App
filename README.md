@@ -1,13 +1,5 @@
 <div align="center">
 
-<p>
-  <a href="https://everydayhub.app/">
-    <img src="./logo.svg" alt="EverydayHub" width="220" height="48" />
-  </a>
-</p>
-
-**Privacy-first digital utilities — built for your browser, not our servers.**
-
 [![Live Site](https://img.shields.io/badge/Live-everydayhub.app-6366f1?style=for-the-badge)](https://everydayhub.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge)](LICENSE)
 [![Privacy First](https://img.shields.io/badge/Privacy-First-06b6d4?style=for-the-badge)](#privacy--our-commitment)
@@ -149,9 +141,9 @@ A unified React studio for structured data — CSV, JSON, XML, Excel, and synthe
 | **Excel** | XLSX/XLS multi-sheet viewer, whitespace trim, empty-row removal, export as CSV/XLSX/JSON |
 | **Mock Data** | Drag-and-drop schema builder, 180+ Faker types, live preview grid, 13 export formats, up to 100k rows via worker |
 
-![DataForge CSV Studio](./screenshots/dataforge-csv.png)
+![DataForge CSV Studio](https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/dataforge-csv.png)
 
-![DataForge Mock Data Generator](./screenshots/dataforge-mock-data.png)
+![DataForge Mock Data Generator](https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/dataforge-mock-data.png)
 
 ---
 
@@ -161,7 +153,7 @@ A unified React studio for structured data — CSV, JSON, XML, Excel, and synthe
 
 Category-organized static tools for PDF, image, text, finance, developer, productivity, and academic workflows — each page is a self-contained HTML/CSS/JS module.
 
-![Tools Portal Overview](./screenshots/tools-portal.png)
+![Tools Portal Overview](https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/tools-portal.png)
 
 ---
 
@@ -173,7 +165,7 @@ Creates **print-ready passport and ID photos** with crop guides, preset aspect r
 
 **Solves:** Expensive photo booths, privacy concerns with online passport services, and inconsistent print sizing.
 
-![Passport Photo Maker](./screenshots/passport-photo-maker.png)
+![Passport Photo Maker](https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/passport-photo-maker.png)
 
 ---
 
@@ -188,9 +180,13 @@ Powered by **`@imgly/background-removal`** loaded as an ES module — the WASM s
 
 **Solves:** Quick product shots, profile photos, and design assets without SaaS subscriptions or cloud upload pipelines.
 
-![Background Remover](./screenshots/background-remover.png)
-
-![AI Background Remover Widget](./screenshots/ai-background-remover-widget.png)
+<p align="center">
+  <img
+    src="https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/ai-background-remover-widget.png"
+    alt="AI Background Remover Widget — upload, remove background, and download"
+    width="720"
+  />
+</p>
 
 ---
 
@@ -209,7 +205,7 @@ Twenty lazy-loaded React tools across six categories — resize, convert, edit, 
 | **Create & Generate** | Meme Generator, Contact Sheet, Screenshot Beautifier, Device Mockup |
 | **Scan & Read** | QR/Barcode Scanner, OCR (Tesseract.js) |
 
-![Image Suite Home](./screenshots/image-suite.png)
+![Image Suite Home](https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/image-suite.png)
 
 ---
 
@@ -230,7 +226,7 @@ Eight privacy-first AI widgets with explicit runtime and power-level badges:
 | **Sentiment & Tone Analyzer** | Shared Llama | Emotional tone scoring with keyword fallback |
 | **AI Text Rewriter & Tone Changer** | Shared Llama | Summarize, elaborate, rewrite, email conversion |
 
-![EDH AI Hub Launcher](./screenshots/ai-hub.png)
+![EDH AI Hub Launcher](https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/ai-hub.png)
 
 ---
 
@@ -240,7 +236,7 @@ Eight privacy-first AI widgets with explicit runtime and power-level badges:
 
 Browser-based audio remix engine using the **Web Audio API** — Slowed + Reverb, Sped Up (Nightcore), Daycore, 8D Audio, Phonk Bass Boost, and Lo-Fi edits. Unlimited file size, zero uploads, WAV export.
 
-![Vibe Studio](./screenshots/vibe-studio.png)
+![Vibe Studio](https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/vibe-studio.png)
 
 ---
 
@@ -253,7 +249,7 @@ Browser-based audio remix engine using the **Web Audio API** — Slowed + Reverb
 | **Developer** | QR Generator, UUID Generator, Timestamp Converter, File Hash Generator, UTM Builder |
 | **Text** | Regex Tester, Markdown Editor, Text Diff, JSON Formatter, ASCII Banner Generator |
 
-![PDF Studio](./screenshots/pdf-studio.png)
+![PDF Studio](https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/pdf-studio.png)
 
 ---
 

@@ -286,20 +286,7 @@ html[data-theme='light'] .nav-link:hover {
 }
 
 .readme-hero {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.readme-hero .logo-img {
-  height: 40px;
-  margin: 0 auto 1rem;
-}
-
-.readme-hero p {
-  color: var(--color-text-secondary);
-  font-size: 1.05rem;
-  max-width: 42rem;
-  margin: 0 auto;
+  display: none;
 }
 
 .readme-body {
@@ -309,6 +296,11 @@ html[data-theme='light'] .nav-link:hover {
 }
 
 .readme-body h1 {
+  display: none;
+}
+
+.readme-body > p:first-child img[alt='EverydayHub'],
+.readme-body img[src*='logo.svg'] {
   display: none;
 }
 
@@ -350,10 +342,12 @@ html[data-theme='light'] .readme-body a {
 
 .readme-body img {
   max-width: 100%;
+  height: auto;
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
-  margin: 1rem 0;
+  margin: 1rem auto;
+  display: block;
 }
 
 .readme-body blockquote {

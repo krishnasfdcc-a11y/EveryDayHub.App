@@ -75,12 +75,6 @@
       </header>
 
       <main class="page-main">
-        <div class="readme-hero">
-          <a href="https://everydayhub.app/" aria-label="EverydayHub Home">
-            <img src="./logo.svg" alt="EverydayHub" class="logo-img" width="220" height="48" decoding="async" />
-          </a>
-          <p>Privacy-first digital utilities — built for your browser, not our servers.</p>
-        </div>
         <article id="content" class="readme-body">
           <p class="loading">Loading documentation…</p>
         </article>
@@ -121,10 +115,12 @@
       }
 
       const el = document.getElementById('content');
+      const assetBase = new URL('./screenshots/', window.location.href).href;
       try {
         const res = await fetch('README.md');
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const md = await res.text();
+        let md = await res.text();
+        md = md.replace(/\]\(\.\/screenshots\//g, `](${assetBase}`);
         el.innerHTML = marked.parse(md);
       } catch (e) {
         el.innerHTML = `<p class="err">Could not load README.md (${e.message}). <a href="https://github.com/krishnasfdcc-a11y/EveryDayHub.App/blob/main/README.md">View on GitHub</a>.</p>`;
