@@ -1,6 +1,10 @@
 <div align="center">
 
-# EverydayHub
+<p>
+  <a href="https://everydayhub.app/">
+    <img src="./logo.svg" alt="EverydayHub" width="220" height="48" />
+  </a>
+</p>
 
 **Privacy-first digital utilities — built for your browser, not our servers.**
 
