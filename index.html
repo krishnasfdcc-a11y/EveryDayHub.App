@@ -94,8 +94,11 @@
     <script src="./theme.js"></script>
     <script type="module">
       import { marked } from 'https://cdn.jsdelivr.net/npm/marked@15.0.7/lib/marked.esm.js';
+      import { initScrollReveal, initHeaderScroll } from './scroll-reveal.js';
 
       marked.setOptions({ gfm: true, breaks: false });
+
+      initHeaderScroll(document);
 
       document.getElementById('year').textContent = String(new Date().getFullYear());
 
@@ -122,6 +125,7 @@
         let md = await res.text();
         md = md.replace(/\]\(\.\/screenshots\//g, `](${assetBase}`);
         el.innerHTML = marked.parse(md);
+        initScrollReveal(document);
       } catch (e) {
         el.innerHTML = `<p class="err">Could not load README.md (${e.message}). <a href="https://github.com/krishnasfdcc-a11y/EveryDayHub.App/blob/main/README.md">View on GitHub</a>.</p>`;
       }
