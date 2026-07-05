@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DesignStudio on EverydayHub — 100+ browser-based CSS and design tools for gradients, palettes, SVG, layout, animation, and WCAG accessibility. Client-side only, no uploads."
+    />
+    <meta
+      name="keywords"
+      content="DesignStudio, CSS design tools, gradient generator, color palette, SVG optimizer, design tokens, WCAG contrast, browser design suite"
+    />
+    <meta name="author" content="EverydayHub" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://krishnasfdcc-a11y.github.io/EveryDayHub.App/designstudio.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="EveryDayHub" />
+    <meta property="og:title" content="DesignStudio — CSS &amp; Design Tools | EverydayHub" />
+    <meta
+      property="og:description"
+      content="100+ privacy-first design utilities — gradients, SVG, layout builders, and accessibility checkers that run entirely in your browser."
+    />
+    <meta property="og:url" content="https://krishnasfdcc-a11y.github.io/EveryDayHub.App/designstudio.html" />
+    <meta property="og:image" content="https://everydayhub.app/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="DesignStudio — CSS &amp; Design Tools | EverydayHub" />
+    <meta
+      name="twitter:description"
+      content="100+ browser-based CSS and design tools with zero uploads — the design companion to DataForge."
+    />
+    <meta name="theme-color" content="#0f172a" />
+    <title>DesignStudio — CSS &amp; Design Tools | EverydayHub Docs</title>
+    <link rel="icon" href="https://everydayhub.app/favicon.svg" type="image/svg+xml" />
+    <script id="theme-init">
+      (function () {
+        var s = localStorage.getItem('everydayhub-theme');
+        if (s !== 'dark') document.documentElement.setAttribute('data-theme', 'light');
+      })();
+    </script>
+    <link rel="stylesheet" href="./hub-background.css" />
+    <link rel="stylesheet" href="./portal.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "DesignStudio",
+        "applicationCategory": "DesignApplication",
+        "operatingSystem": "Web Browser",
+        "url": "https://everydayhub.app/designstudio/",
+        "description": "Browser-based CSS and design toolkit with gradients, palettes, SVG utilities, layout builders, and WCAG accessibility tools.",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "isPartOf": { "@type": "WebSite", "name": "EverydayHub", "url": "https://everydayhub.app/" }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="hub-bg" aria-hidden="true">
+      <div class="hub-bg__orb hub-bg__orb--indigo"></div>
+      <div class="hub-bg__orb hub-bg__orb--cyan"></div>
+      <div class="hub-bg__pulse"></div>
+      <div class="hub-bg__grid"></div>
+    </div>
+
+    <div class="page-root">
+      <header class="site-header" role="banner">
+        <div class="container header-inner">
+          <a href="./" class="logo" aria-label="EverydayHub Docs Home">
+            <img src="./logo.svg" alt="EverydayHub" class="logo-img" width="165" height="36" decoding="async" />
+          </a>
+          <div class="header-actions">
+            <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Switch to dark mode">
+              <svg class="theme-icon theme-icon--moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+              <svg class="theme-icon theme-icon--sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2"/></svg>
+            </button>
+            <nav class="primary-nav" role="navigation" aria-label="Main navigation">
+              <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+              </button>
+              <ul class="nav-list" id="nav-list">
+                <li><a href="https://everydayhub.app/" class="nav-link">Home</a></li>
+                <li><a href="https://everydayhub.app/designstudio/" class="nav-link nav-link--active">DesignStudio</a></li>
+                <li><a href="https://everydayhub.app/DataForge/" class="nav-link">DataForge</a></li>
+                <li><a href="https://everydayhub.app/blog/introducing-designstudio-guide/" class="nav-link">Guide</a></li>
+                <li><a href="./" class="nav-link">Docs</a></li>
+                <li><a href="https://everydayhub.app/designstudio/" class="nav-link nav-cta">Launch App</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="page-main">
+        <article class="readme-body product-page">
+          <p class="section-label">DesignStudio</p>
+          <h1>CSS &amp; design tools that never leave your browser</h1>
+          <p class="lede">
+            <strong>DesignStudio</strong> is EverydayHub&apos;s visual design workbench — 100+ generators,
+            layout playgrounds, SVG utilities, and accessibility validators. It complements
+            <a href="https://everydayhub.app/DataForge/">DataForge</a> (data editing) with the UI layer:
+            chart colors, dashboard spacing, loading states, and export-ready CSS.
+          </p>
+
+          <p class="cta-row">
+            <a class="btn btn-primary" href="https://everydayhub.app/designstudio/">Open DesignStudio</a>
+            <a class="btn btn-secondary" href="https://everydayhub.app/designstudio/blog/">Category guides</a>
+          </p>
+
+          <figure class="product-shot">
+            <img
+              src="./screenshots/designstudio-dashboard.png"
+              alt="DesignStudio dashboard with category sidebar and tool grid"
+              width="1440"
+              height="900"
+              loading="lazy"
+              decoding="async"
+              onerror="this.onerror=null;this.src='https://everydayhub.app/og-image.png';"
+            />
+            <figcaption>DesignStudio — browse by category or search 100+ tools from one dashboard.</figcaption>
+          </figure>
+
+          <h2>Eleven focused categories</h2>
+          <p>Each category ships copy-ready CSS, SVG, or token output — no account wall, no watermarks.</p>
+          <div class="category-grid" role="list">
+            <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=generator">🎨 Generators</a>
+            <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=image">🖼️ Image</a>
+            <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=effect">✨ Effects</a>
+            <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=layout">📐 Layout</a>
+            <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=pattern">🔲 Patterns</a>
+            <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=animation">🎬 Animation</a>
+            <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=svg">✏️ SVG Tools</a>
+            <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=utility">🔧 Utility</a>
+            <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=measurement">📏 Measurement</a>
+            <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=creative">🎭 Creative</a>
+            <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=accessibility">♿ Accessibility</a>
+          </div>
+
+          <h2>Built for developers &amp; data teams</h2>
+          <ul>
+            <li><strong>Design tokens &amp; themes</strong> — export JSON, CSS variables, and Tailwind-ready ramps for dashboard repos.</li>
+            <li><strong>Chart &amp; KPI styling</strong> — define palette and contrast before wiring DataForge visualizations.</li>
+            <li><strong>SVG pipeline</strong> — optimize, sprite, and convert icons to React or Vue without cloud converters.</li>
+            <li><strong>WCAG tooling</strong> — contrast checks and focus-ring generators for regulated analytics UIs.</li>
+          </ul>
+
+          <h2>Privacy architecture</h2>
+          <p>
+            Like DataForge, DesignStudio runs <strong>100% client-side</strong>. Palettes, SVG markup, and exported
+            PNGs are generated in memory on your device — no uploads, no tracking pixels, no sign-up.
+          </p>
+
+          <h2>Source &amp; deploy</h2>
+          <p>Source lives in <code>DesignStudio-/</code> in the monorepo. Publish to production with:</p>
+          <pre><code>cd DesignStudio-
+npm run publish:hub   # → everydayhub-main/designstudio/</code></pre>
+
+          <h2>Further reading</h2>
+          <ul>
+            <li><a href="https://everydayhub.app/blog/introducing-designstudio-guide/">Introducing DesignStudio</a> — overview on EverydayHub Blog</li>
+            <li><a href="https://everydayhub.app/blog/designstudio-accessibility-guide/">Accessibility tools guide</a></li>
+            <li><a href="./README.md">Full EverydayHub architecture docs</a></li>
+          </ul>
+        </article>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p>
+            © <span id="year"></span> EverydayHub ·
+            <a href="https://everydayhub.app/designstudio/">DesignStudio</a> ·
+            <a href="mailto:feedback@everydayhub.app">Feedback</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="./theme.js"></script>
+    <script type="module">
+      import { initScrollReveal, initHeaderScroll } from './scroll-reveal.js';
+      initHeaderScroll(document);
+      initScrollReveal(document);
+      document.getElementById('year').textContent = String(new Date().getFullYear());
+      const toggle = document.querySelector('.nav-toggle');
+      const navList = document.getElementById('nav-list');
+      if (toggle && navList) {
+        toggle.addEventListener('click', () => {
+          const open = navList.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        navList.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            navList.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

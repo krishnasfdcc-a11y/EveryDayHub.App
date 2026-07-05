@@ -10,7 +10,7 @@
 
 ## Intention
 
-EverydayHub exists to prove that powerful software does not require surveillance. We build **100+ free, ad-free tools** — for data, images, PDFs, finance, audio, and AI — that run **entirely in the user's browser**. No accounts. No uploads. No hidden analytics.
+EverydayHub exists to prove that powerful software does not require surveillance. We build **100+ free, ad-free tools** — for data, design, images, PDFs, finance, audio, and AI — that run **entirely in the user's browser**. No accounts. No uploads. No hidden analytics.
 
 Our mission is simple: **give everyone professional-grade utilities that respect their data as much as their time.**
 
@@ -38,7 +38,7 @@ EverydayHub is a **multi-surface product family** unified by shared branding, th
 
 | Layer | Technology | Role |
 | --- | --- | --- |
-| **UI Framework** | React 19 | Component model for DataForge, Image Suite, AI Hub, and Vibe Studio |
+| **UI Framework** | React 19 | Component model for DataForge, DesignStudio, Image Suite, AI Hub, and Vibe Studio |
 | **Build Tooling** | Vite 7–8 | Dev server, HMR, production bundling, `@/` path aliases |
 | **Language** | TypeScript 5.8–6 | Type-safe stores, workers, and tool configs |
 | **Styling** | Tailwind CSS 3.4 / 4.x | Utility-first layout; shared hub design tokens in `index.css` |
@@ -62,6 +62,7 @@ Understanding where things live helps contributors navigate the ecosystem quickl
 ```
 EveryDayHub.App/       ← You are here — public portal, docs, GitHub Pages landing
 CSVStudio/             ← DataForge source (CSV · JSON · XML · Excel · Mock Data)
+DesignStudio-/         ← DesignStudio source (100+ CSS & design tools)
 Image/                 ← Image Suite source (20 browser-local image tools)
 ai/                    ← EDH AI Hub (8 privacy-first AI widgets + Cloudflare worker)
 vibe/                  ← Vibe Studio (Web Audio remix engine)
@@ -94,6 +95,7 @@ EverydayHub is **Privacy First** by design — not by marketing copy.
 | Asset class | How it is processed | Third-party cloud? |
 | --- | --- | --- |
 | **CSV, JSON, XML, Excel files** | Parsed in Web Workers via PapaParse, native JSON, fast-xml-parser, and SheetJS | **Never** |
+| **CSS, SVG, palettes & design exports** | Generated in-browser in DesignStudio; copy/download only | **Never** |
 | **Mock / synthetic data** | Generated locally with Faker.js inside a dedicated worker (up to 100,000 rows) | **Never** |
 | **Image edits & batch ops** | Canvas API, Web Workers, Tesseract.js OCR — all in-browser | **Never** |
 | **AI Background Remover (Tools Portal)** | `@imgly/background-removal` WASM model downloaded once; inference runs on **your CPU/GPU** | **Never** — model assets only, not your photos |
@@ -144,6 +146,26 @@ A unified React studio for structured data — CSV, JSON, XML, Excel, and synthe
 ![DataForge CSV Studio](https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/dataforge-csv.png)
 
 ![DataForge Mock Data Generator](https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/dataforge-mock-data.png)
+
+---
+
+### DesignStudio — Browser Design Workbench
+
+**Route:** [everydayhub.app/designstudio](https://everydayhub.app/designstudio/) · **Docs:** [DesignStudio page](./designstudio.html) · **Source:** `DesignStudio-/`
+
+A React + Vite studio with **100+ CSS and design utilities** organized into eleven categories — generators, image styling, effects, layout, patterns, animation, SVG, utility, measurement, creative art, and accessibility. Each tool outputs copy-ready CSS, SVG, or design tokens without server round-trips.
+
+| Category | Examples |
+| --- | --- |
+| **Generators** | Color palettes, CSS gradients, Tailwind/Material ramps, mesh gradients |
+| **Layout** | Flexbox & Grid builders, container queries, responsive prototypes |
+| **SVG** | Optimize, minify, sprite, convert to React/Vue, favicon sets |
+| **Utility** | Design tokens, theme builder, device & social previews |
+| **Accessibility** | WCAG contrast, focus rings, color-blindness simulation |
+
+DesignStudio pairs with **DataForge**: shape data in CSV/JSON pipelines, then style dashboards and exports with consistent tokens and accessible contrast — all on-device.
+
+![DesignStudio Dashboard](https://krishnasfdcc-a11y.github.io/EveryDayHub.App/screenshots/designstudio-dashboard.png)
 
 ---
 
@@ -260,6 +282,7 @@ Browser-based audio remix engine using the **Web Audio API** — Slowed + Reverb
 | **Main Application** | [https://everydayhub.app](https://everydayhub.app/) |
 | **Tools Portal** | [https://tools.everydayhub.app](https://tools.everydayhub.app/) |
 | **DataForge** | [https://everydayhub.app/DataForge](https://everydayhub.app/DataForge/) |
+| **DesignStudio** | [https://everydayhub.app/designstudio](https://everydayhub.app/designstudio/) · [Docs](./designstudio.html) |
 | **Image Suite** | [https://everydayhub.app/image](https://everydayhub.app/image/) |
 | **AI Hub** | [https://ai.everydayhub.app](https://ai.everydayhub.app/) |
 | **Vibe Studio** | [https://vibe.everydayhub.app](https://vibe.everydayhub.app/) |
@@ -287,6 +310,9 @@ Production publish into the main hub:
 ```bash
 cd CSVStudio
 npm run publish:hub   # builds and copies dist → everydayhub-main/DataForge/
+
+cd DesignStudio-
+npm run publish:hub   # builds and copies dist → everydayhub-main/designstudio/
 ```
 
 ---

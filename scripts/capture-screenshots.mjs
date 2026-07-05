@@ -15,6 +15,12 @@ const outDir = path.resolve(__dirname, '../screenshots');
 const SHOTS = [
   { file: 'dataforge-csv.png', url: 'https://everydayhub.app/DataForge/', wait: 2500 },
   { file: 'dataforge-mock-data.png', url: 'https://everydayhub.app/DataForge/generator', wait: 2500 },
+  {
+    file: 'designstudio-dashboard.png',
+    url: 'https://everydayhub.app/designstudio/',
+    wait: 3000,
+    waitFor: '.dashboard__title',
+  },
   { file: 'tools-portal.png', url: 'https://tools.everydayhub.app/', wait: 2000 },
   {
     file: 'passport-photo-maker.png',
