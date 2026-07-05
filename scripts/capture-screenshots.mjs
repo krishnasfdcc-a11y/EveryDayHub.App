@@ -20,6 +20,7 @@ const SHOTS = [
     url: 'https://everydayhub.app/designstudio/',
     wait: 3000,
     waitFor: '.dashboard__title',
+    waitUntil: 'networkidle',
   },
   { file: 'tools-portal.png', url: 'https://tools.everydayhub.app/', wait: 2000 },
   {
