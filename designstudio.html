@@ -135,12 +135,42 @@
             <a class="category-card" role="listitem" href="https://everydayhub.app/designstudio/?category=accessibility">♿ Accessibility</a>
           </div>
 
-          <h2>Built for developers &amp; data teams</h2>
+          <h2>Why developers reach for DesignStudio</h2>
+          <p>
+            Most design utilities on the web are single-purpose pages with sign-up walls, watermarked exports,
+            or cloud uploads. DesignStudio is the opposite: a <strong>focused workbench</strong> where you stay in
+            flow — tweak a gradient, check WCAG contrast, optimize an SVG, export tokens — without opening
+            twelve tabs or pasting sensitive UI work into someone else&apos;s server.
+          </p>
           <ul>
-            <li><strong>Design tokens &amp; themes</strong> — export JSON, CSS variables, and Tailwind-ready ramps for dashboard repos.</li>
-            <li><strong>Chart &amp; KPI styling</strong> — define palette and contrast before wiring DataForge visualizations.</li>
-            <li><strong>SVG pipeline</strong> — optimize, sprite, and convert icons to React or Vue without cloud converters.</li>
-            <li><strong>WCAG tooling</strong> — contrast checks and focus-ring generators for regulated analytics UIs.</li>
+            <li><strong>Copy-ready output</strong> — every tool emits CSS, SVG, PNG, or JSON you can paste straight into React, Tailwind, or a design-system repo.</li>
+            <li><strong>Live preview first</strong> — sliders, color pickers, and layout handles update the canvas instantly so you see the result before committing code.</li>
+            <li><strong>Data + UI in one ecosystem</strong> — pair with <a href="https://everydayhub.app/DataForge/">DataForge</a> to shape CSV/JSON exports, then style charts, tables, and KPI cards with consistent palettes and spacing.</li>
+            <li><strong>No account friction</strong> — no login gates, no export limits, no &ldquo;upgrade to download&rdquo; prompts between you and shipping.</li>
+            <li><strong>Accessibility before prod</strong> — contrast checkers, focus-ring builders, and color-blindness simulators catch issues while you design, not after a compliance review.</li>
+          </ul>
+
+          <h2>How we designed it</h2>
+          <p>
+            DesignStudio follows the same craft principles as the rest of EverydayHub: <strong>one job per tool</strong>,
+            <strong>privacy by architecture</strong>, and UI that gets out of the way.
+          </p>
+          <ul>
+            <li><strong>Split-panel workflow</strong> — controls on one side, live preview on the other; the pattern repeats across all 119 utilities so muscle memory carries between tools.</li>
+            <li><strong>Category-first navigation</strong> — eleven browsable groups with search, recently-used chips, and deep links (<code>?category=generator</code>) you can share with a teammate.</li>
+            <li><strong>Shared EverydayHub chrome</strong> — the same header, theme toggle, typography, and motion language as DataForge, Image Suite, and the AI Hub so the ecosystem feels like one product family.</li>
+            <li><strong>Intentional scope</strong> — each generator does one thing well (mesh gradient, sprite builder, container-query playground) instead of bloated &ldquo;do everything&rdquo; suites.</li>
+            <li><strong>Client-side only</strong> — palettes, SVG markup, and exported assets are built in browser memory; nothing is uploaded for processing or analytics.</li>
+          </ul>
+
+          <h2>What we put in for developers</h2>
+          <p>EverydayHub invested in the full stack so you get professional utilities without assembling them yourself:</p>
+          <ul>
+            <li><strong>119 design tools</strong> across generators, layout, SVG, animation, patterns, measurement, creative art, and accessibility — each with category guides on the <a href="https://everydayhub.app/blog/">EverydayHub blog</a>.</li>
+            <li><strong>Design-token and theme exports</strong> — JSON, CSS custom properties, and Tailwind-ready ramps for dashboard and internal-tool repos.</li>
+            <li><strong>SVG pipeline</strong> — optimize, minify, sprite, and convert to React or Vue components without sending assets to third-party converters.</li>
+            <li><strong>Layout playgrounds</strong> — flexbox, grid, container queries, and responsive breakpoints with code you can drop into production stylesheets.</li>
+            <li><strong>Enterprise-friendly pairing</strong> — document contrast ratios, chart palettes, and loading skeletons alongside DataForge data workflows for regulated analytics UIs.</li>
           </ul>
 
           <h2>Privacy architecture</h2>
@@ -148,11 +178,6 @@
             Like DataForge, DesignStudio runs <strong>100% client-side</strong>. Palettes, SVG markup, and exported
             PNGs are generated in memory on your device — no uploads, no tracking pixels, no sign-up.
           </p>
-
-          <h2>Source &amp; deploy</h2>
-          <p>Source lives in <code>DesignStudio-/</code> in the monorepo. Publish to production with:</p>
-          <pre><code>cd DesignStudio-
-npm run publish:hub   # → everydayhub-main/designstudio/</code></pre>
 
           <h2>Further reading</h2>
           <ul>

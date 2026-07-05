@@ -151,7 +151,7 @@ A unified React studio for structured data — CSV, JSON, XML, Excel, and synthe
 
 ### DesignStudio — Browser Design Workbench
 
-**Route:** [everydayhub.app/designstudio](https://everydayhub.app/designstudio/) · **Docs:** [DesignStudio page](./designstudio.html) · **Source:** `DesignStudio-/`
+**Route:** [everydayhub.app/designstudio](https://everydayhub.app/designstudio/) · **Docs:** [DesignStudio page](./designstudio.html)
 
 A React + Vite studio with **100+ CSS and design utilities** organized into eleven categories — generators, image styling, effects, layout, patterns, animation, SVG, utility, measurement, creative art, and accessibility. Each tool outputs copy-ready CSS, SVG, or design tokens without server round-trips.
 
@@ -293,27 +293,39 @@ Browser-based audio remix engine using the **Web Audio API** — Slowed + Reverb
 
 ---
 
-## Getting Started (Contributors)
+## Built for Developers
 
-Individual apps ship their own dev scripts. Example — **DataForge**:
+EverydayHub is engineered around how developers and data teams actually work — not around accounts, uploads, or upsells.
 
-```bash
-cd CSVStudio
-npm install
-npm run dev
-```
+| Pain point | What EverydayHub delivers |
+| --- | --- |
+| **Tab overload** — a dozen single-purpose sites for CSS, data, PDFs, and images | **100+ tools** in one hub with shared navigation, search, and theme persistence |
+| **Cloud uploads for local work** — spreadsheets and photos sent to unknown servers | **Client-side execution** — Web Workers, Canvas, WASM, and optional WebGPU; your files stay on-device |
+| **Guessing CSS** — DevTools trial-and-error for gradients, grids, shadows, contrast | **DesignStudio** — live preview, copy-ready CSS/SVG/tokens, WCAG checks built in |
+| **Mock data behind paywalls** | **DataForge** — 180+ Faker field types, schema builder, up to 100k rows via worker, 13 export formats |
+| **Opaque AI runtimes** | **Labeled capabilities** — Heuristic, WASM, WebGPU, and Cloud-optional badges on every AI Hub tool |
 
-Open [http://localhost:5173/DataForge/](http://localhost:5173/DataForge/).
+### Why our design approach matters
 
-Production publish into the main hub:
+We treat UI craft as part of the product contract, not decoration:
 
-```bash
-cd CSVStudio
-npm run publish:hub   # builds and copies dist → everydayhub-main/DataForge/
+- **One job per tool** — each utility solves a specific workflow (flexbox playground, SVG sprite builder, EMI calculator) instead of feature-bloated suites.
+- **Preview before copy** — sliders and inputs update output in real time; you ship code you have already seen working.
+- **Shared ecosystem chrome** — the same header, dark/light toggle, typography, and motion across DataForge, DesignStudio, Image Suite, and AI Hub so the family feels cohesive.
+- **Privacy by architecture** — we design zero-upload paths first; optional cloud modes are explicit and user-chosen.
+- **Honest capability labels** — no dark patterns, no artificial export gates, no hidden analytics on tool surfaces.
 
-cd DesignStudio-
-npm run publish:hub   # builds and copies dist → everydayhub-main/designstudio/
-```
+### What we put in for developers
+
+This is not a link directory. EverydayHub ships complete, production-grade surfaces:
+
+- **DesignStudio** — 119 CSS and design utilities across eleven categories, with deep links, category blog guides, and DataForge pairing for data-heavy UIs.
+- **DataForge** — five data studios (CSV, JSON, XML, Excel, Mock Data) with virtualized grids, worker-backed parsing, and visualization hooks.
+- **Image Suite** — twenty lazy-loaded tools with batch ZIP export, OCR, EXIF handling, and on-device effects.
+- **Tools Portal** — 75+ fast static pages for PDF, finance, developer, and productivity workflows.
+- **AI Hub** — eight widgets with clear runtime labels; local Llama, WASM segmentation, and opt-in cloud streaming.
+- **Edge deployment** — Cloudflare Workers/Pages for global latency without collecting your files.
+- **Documentation** — architecture docs, privacy commitments, and per-category guides so teams can adopt with confidence.
 
 ---
 
