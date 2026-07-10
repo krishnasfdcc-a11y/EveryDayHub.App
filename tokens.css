@@ -1,0 +1,94 @@
+/* =========================================================
+   EverydayHub Action Palette — Design Tokens v2.0.0
+   AUTO-GENERATED — do not edit. Regenerate from the design-token source.
+   ========================================================= */
+
+/* ---------- Light theme (default) ---------- */
+:root {
+  --color-bg: #F6F7FB;
+  --color-bg-alt: #EEF0F7;
+  --color-surface: #FFFFFF;
+  --color-surface-hover: #EEF0F7;
+  --color-border: #E2E5F0;
+  --color-text: #0C1222;
+  --color-text-secondary: #3D4A63;
+  --color-text-muted: #8B95A8;
+  --color-primary: #6366f1;
+  --color-primary-hover: #4f46e5;
+  --color-primary-light: rgba(99, 102, 241, 0.12);
+  --color-primary-glow: rgba(99, 102, 241, 0.28);
+  --color-accent: #14B8A6;
+  --color-accent-hover: #0D9488;
+  --color-accent-secondary: #0EA5E9;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-emerald: #10B981;
+  --color-hero-bg: #0C1222;
+  --color-hero-text: #F1F3F9;
+  --color-footer-bg: #0C1222;
+  --color-footer-text: #8B95A8;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --max-width: 1200px;
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ---------- Dark theme (system preference) ---------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #080D18;
+    --color-bg-alt: #0F1628;
+    --color-surface: #1A2236;
+    --color-surface-hover: #243047;
+    --color-border: #2D3A52;
+    --color-text: #F1F3F9;
+    --color-text-secondary: #9AA5BC;
+    --color-text-muted: #6B7694;
+    --color-primary: #818cf8;
+    --color-primary-hover: #6366f1;
+    --color-primary-light: rgba(99, 102, 241, 0.18);
+    --color-primary-glow: rgba(99, 102, 241, 0.35);
+    --color-hero-bg: #080D18;
+    --color-hero-text: #F1F3F9;
+    --color-footer-bg: #080D18;
+    --color-footer-text: #6B7694;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+  }
+}
+
+/* ---------- Dark theme (manual toggle) ---------- */
+html:not([data-theme="light"]) {
+  --color-bg: #080D18;
+  --color-bg-alt: #0F1628;
+  --color-surface: #1A2236;
+  --color-surface-hover: #243047;
+  --color-border: #2D3A52;
+  --color-text: #F1F3F9;
+  --color-text-secondary: #9AA5BC;
+  --color-text-muted: #6B7694;
+  --color-primary: #818cf8;
+  --color-primary-hover: #6366f1;
+  --color-primary-light: rgba(99, 102, 241, 0.18);
+  --color-primary-glow: rgba(99, 102, 241, 0.35);
+  --color-hero-bg: #080D18;
+  --color-hero-text: #F1F3F9;
+  --color-footer-bg: #080D18;
+  --color-footer-text: #6B7694;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+}
