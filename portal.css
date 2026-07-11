@@ -121,6 +121,19 @@ html[data-theme='light'] .site-header {
   text-decoration: none;
 }
 
+/* Dual logo — dark logo default, light logo in light mode */
+.logo-light {
+  display: none;
+}
+
+[data-theme="light"] .logo-dark {
+  display: none;
+}
+
+[data-theme="light"] .logo-light {
+  display: block;
+}
+
 .logo-img {
   display: block;
   height: 32px;

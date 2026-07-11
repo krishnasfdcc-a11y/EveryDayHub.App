@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48" role="img" aria-labelledby="eh-logo-light-title">
+  <title id="eh-logo-light-title">EverydayHub</title>
+  <defs>
+    <linearGradient id="eh-bolt-light" x1="12" y1="8" x2="36" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366f1"/>
+      <stop stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="eh-bg-light" x1="0" y1="0" x2="220" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8fafc"/>
+      <stop stop-color="#f1f5f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="220" height="48" rx="10" fill="url(#eh-bg-light)"/>
+  <rect x="6" y="6" width="36" height="36" rx="8" fill="rgba(99,102,241,0.08)" stroke="rgba(99,102,241,0.2)" stroke-width="1"/>
+  <path fill="url(#eh-bolt-light)" d="M24 13 18 25h6l-4 10 10-12h-6z"/>
+  <text x="50" y="31" font-family="Segoe UI, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700" fill="#0f172a">Everyday</text>
+  <text x="142" y="31" font-family="Segoe UI, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="700" fill="#5850EC">Hub</text>
+</svg>
